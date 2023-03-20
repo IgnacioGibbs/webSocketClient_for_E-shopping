@@ -4,10 +4,10 @@ import "./style.css";
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
     <h2>Websocket - Client</h2>
-    <span class="card read-the-docs" id="server-status">Offline</span>
+    <span class="card read-the-docs offline" id="server-status">Offline</span>
 
-    <div id="jwtToken">
-      <h3>Connect to server</h3>
+    <h3>Connect to server</h3>
+    <div id="jwtToken" class="flex">
       <input type="text" placeholder="Json Wrb Token" />
       <button>Connect</button>
     </div>
